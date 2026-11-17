@@ -1,0 +1,143 @@
+[NeMo W 2026-11-17 17:07:21 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+      warnings.warn(
+    
+[NeMo W 2026-11-17 17:07:21 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+      warnings.warn(
+    
+[NeMo I 2026-11-17 17:07:24 nemo_logging:393] ExpManager schema
+[NeMo I 2026-11-17 17:07:24 nemo_logging:393] {'explicit_log_dir': None, 'exp_dir': None, 'name': None, 'version': None, 'use_datetime_version': True, 'resume_if_exists': False, 'resume_past_end': False, 'resume_ignore_no_checkpoint': False, 'resume_from_checkpoint': None, 'create_tensorboard_logger': True, 'summary_writer_kwargs': None, 'create_wandb_logger': False, 'wandb_logger_kwargs': None, 'create_mlflow_logger': False, 'mlflow_logger_kwargs': {'experiment_name': None, 'run_name': None, 'tracking_uri': None, 'tags': None, 'save_dir': './mlruns', 'prefix': '', 'artifact_location': None, 'run_id': None, 'log_model': False}, 'create_dllogger_logger': False, 'dllogger_logger_kwargs': {'verbose': False, 'stdout': False, 'json_file': './dllogger.json'}, 'create_clearml_logger': False, 'clearml_logger_kwargs': {'project': None, 'task': None, 'connect_pytorch': False, 'model_name': None, 'tags': None, 'log_model': False, 'log_cfg': False, 'log_metrics': False}, 'create_neptune_logger': False, 'neptune_logger_kwargs': None, 'create_checkpoint_callback': True, 'checkpoint_callback_params': {'filepath': None, 'dirpath': None, 'filename': None, 'monitor': 'val_loss', 'verbose': True, 'save_last': True, 'save_top_k': 3, 'save_weights_only': False, 'mode': 'min', 'auto_insert_metric_name': True, 'every_n_epochs': 1, 'every_n_train_steps': None, 'train_time_interval': None, 'prefix': None, 'postfix': '.nemo', 'save_best_model': False, 'always_save_nemo': False, 'save_nemo_on_train_end': True, 'model_parallel_size': None, 'save_on_train_epoch_end': False, 'async_save': False, 'save_last_n_optim_states': -1}, 'create_early_stopping_callback': False, 'create_ipl_epoch_stopper_callback': False, 'early_stopping_callback_params': {'monitor': 'val_loss', 'mode': 'min', 'min_delta': 0.001, 'patience': 10, 'verbose': True, 'strict': True, 'check_finite': True, 'stopping_threshold': None, 'divergence_threshold': None, 'check_on_train_epoch_end': None, 'log_rank_zero_only': False}, 'ipl_epoch_stopper_callback_params': {'enable_stop': True, 'stop_every_n_epochs': 1}, 'create_preemption_callback': True, 'files_to_copy': None, 'log_step_timing': True, 'log_delta_step_timing': False, 'step_timing_kwargs': {'reduction': 'mean', 'sync_cuda': False, 'buffer_size': 1}, 'log_local_rank_0_only': False, 'log_global_rank_0_only': False, 'disable_validation_on_resume': True, 'ema': {'enable': False, 'decay': 0.999, 'cpu_offload': False, 'validate_original_weights': False, 'every_n_steps': 1}, 'max_time_per_run': None, 'seconds_to_sleep': 5.0, 'create_straggler_detection_callback': False, 'straggler_detection_params': {'report_time_interval': 300.0, 'calc_relative_gpu_perf': True, 'calc_individual_gpu_perf': True, 'num_gpu_perf_scores_to_log': 5, 'gpu_relative_perf_threshold': 0.7, 'gpu_individual_perf_threshold': 0.7, 'stop_if_detected': False}, 'create_fault_tolerance_callback': False, 'fault_tolerance': {'workload_check_interval': 5.0, 'initial_rank_heartbeat_timeout': 3600.0, 'rank_heartbeat_timeout': 2700.0, 'calculate_timeouts': True, 'safety_factor': 5.0, 'rank_termination_signal': <Signals.SIGKILL: 9>, 'log_level': 'INFO', 'max_rank_restarts': 0, 'max_subsequent_job_failures': 0, 'additional_ft_launcher_args': '', 'simulated_fault': None}, 'log_tflops_per_sec_per_gpu': True}
+[NeMo I 2026-11-17 17:07:24 nemo_logging:393] Experiments will be logged at /kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24
+[NeMo I 2026-11-17 17:07:24 nemo_logging:393] TensorboardLogger has been set up
+[NeMo I 2026-11-17 17:07:24 nemo_logging:393] TFLOPs per sec per GPU will be calculated, conditioned on supported models. Defaults to -1 upon failure.
+[NeMo W 2026-11-17 17:07:50 nemo_logging:405] apply_to_oov_word=None, This means that some of words will remain unchanged if they are not handled by any of the rules in self.parse_one_word(). This may be intended if phonemes and chars are both valid inputs, otherwise, you may see unexpected deletions in your input.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Loading dataset from /kaggle/working/outputs/manifests/train_id.json.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Loaded dataset with 164 files.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Dataset contains 0.23 hours.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Pruned 0 files. Final dataset contains 164 files
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Pruned 0.00 hours. Final dataset contains 0.23 hours.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Loading dataset from /kaggle/working/outputs/manifests/val_id.json.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Loaded dataset with 20 files.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Dataset contains 0.03 hours.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Pruned 0 files. Final dataset contains 20 files
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] Pruned 0.00 hours. Final dataset contains 0.03 hours.
+[NeMo I 2026-11-17 17:07:50 nemo_logging:393] PADDING: 1
+[NeMo W 2026-11-17 17:08:18 nemo_logging:405] apply_to_oov_word=None, This means that some of words will remain unchanged if they are not handled by any of the rules in self.parse_one_word(). This may be intended if phonemes and chars are both valid inputs, otherwise, you may see unexpected deletions in your input.
+[NeMo W 2026-11-17 17:08:18 nemo_logging:405] If you intend to do training or fine-tuning, please call the ModelPT.setup_training_data() method and provide a valid configuration file to setup the train data loader.
+    Train config : 
+    dataset:
+      _target_: nemo.collections.tts.torch.data.TTSDataset
+      manifest_filepath: /ws/LJSpeech/nvidia_ljspeech_train_clean_ngc.json
+      sample_rate: 22050
+      sup_data_path: /raid/LJSpeech/supplementary
+      sup_data_types:
+      - align_prior_matrix
+      - pitch
+      n_fft: 1024
+      win_length: 1024
+      hop_length: 256
+      window: hann
+      n_mels: 80
+      lowfreq: 0
+      highfreq: 8000
+      max_duration: null
+      min_duration: 0.1
+      ignore_file: null
+      trim: false
+      pitch_fmin: 65.40639132514966
+      pitch_fmax: 2093.004522404789
+      pitch_norm: true
+      pitch_mean: 212.35873413085938
+      pitch_std: 68.52806091308594
+      use_beta_binomial_interpolator: true
+    dataloader_params:
+      drop_last: false
+      shuffle: true
+      batch_size: 24
+      num_workers: 0
+    
+[NeMo W 2026-11-17 17:08:18 nemo_logging:405] If you intend to do validation, please call the ModelPT.setup_validation_data() or ModelPT.setup_multiple_validation_data() method and provide a valid configuration file to setup the validation data loader(s). 
+    Validation config : 
+    dataset:
+      _target_: nemo.collections.tts.torch.data.TTSDataset
+      manifest_filepath: /ws/LJSpeech/nvidia_ljspeech_val_clean_ngc.json
+      sample_rate: 22050
+      sup_data_path: /raid/LJSpeech/supplementary
+      sup_data_types:
+      - align_prior_matrix
+      - pitch
+      n_fft: 1024
+      win_length: 1024
+      hop_length: 256
+      window: hann
+      n_mels: 80
+      lowfreq: 0
+      highfreq: 8000
+      max_duration: null
+      min_duration: null
+      ignore_file: null
+      trim: false
+      pitch_fmin: 65.40639132514966
+      pitch_fmax: 2093.004522404789
+      pitch_norm: true
+      pitch_mean: 212.35873413085938
+      pitch_std: 68.52806091308594
+      use_beta_binomial_interpolator: true
+    dataloader_params:
+      drop_last: false
+      shuffle: false
+      batch_size: 24
+      num_workers: 0
+    
+[NeMo I 2026-11-17 17:08:18 nemo_logging:393] PADDING: 1
+[NeMo I 2026-11-17 17:08:19 nemo_logging:393] Model FastPitchWithMCD was successfully restored from /kaggle/working/work/nemo_pretrained/tts_en_fastpitch.nemo.
+[NeMo I 2026-11-17 17:08:19 nemo_logging:393] Model checkpoint restored from nemo file with path : `/kaggle/working/work/nemo_pretrained/tts_en_fastpitch.nemo`
+[NeMo I 2026-11-17 17:08:20 nemo_logging:393] Optimizer config = Adam (
+    Parameter Group 0
+        amsgrad: False
+        betas: [0.9, 0.999]
+        capturable: False
+        differentiable: False
+        eps: 1e-08
+        foreach: None
+        fused: None
+        lr: 0.0002
+        maximize: False
+        weight_decay: 1e-06
+    )
+[NeMo I 2026-11-17 17:08:20 nemo_logging:393] Scheduler not initialized as no `sched` config supplied to setup_optimizer()
+[NeMo W 2026-11-17 17:09:39 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (11) is smaller than the logging interval Trainer(log_every_n_steps=100). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+    
+[NeMo I 2026-11-17 17:09:39 nemo_logging:393] Preemption requires torch distributed to be initialized, disabling preemption
+[NeMo I 2026-11-17 17:12:32 nemo_logging:393] Checkpoint save for step 55 started at 1794935552.5252964.
+[NeMo I 2026-11-17 17:12:33 nemo_logging:393] Checkpoint save for step 55 started at 1794935553.8687646.
+[NeMo I 2026-11-17 17:13:15 nemo_logging:393] Checkpoint save for step 110 started at 1794935595.598246.
+[NeMo I 2026-11-17 17:13:16 nemo_logging:393] Checkpoint save for step 110 started at 1794935596.8917553.
+[NeMo I 2026-11-17 17:13:58 nemo_logging:393] Checkpoint save for step 165 started at 1794935638.4334054.
+[NeMo I 2026-11-17 17:13:59 nemo_logging:393] Checkpoint save for step 165 started at 1794935639.7615.
+[NeMo I 2026-11-17 17:14:40 nemo_logging:393] Checkpoint save for step 220 started at 1794935680.5443566.
+[NeMo I 2026-11-17 17:14:41 nemo_logging:393] Checkpoint save for step 220 started at 1794935681.8234494.
+[NeMo I 2026-11-17 17:15:23 nemo_logging:393] Checkpoint save for step 275 started at 1794935723.7351499.
+[NeMo I 2026-11-17 17:15:25 nemo_logging:393] Checkpoint save for step 275 started at 1794935725.0884976.
+[NeMo I 2026-11-17 17:16:06 nemo_logging:393] Checkpoint save for step 330 started at 1794935766.3820975.
+[NeMo I 2026-11-17 17:16:45 nemo_logging:393] Checkpoint save for step 385 started at 1794935805.687638.
+[NeMo I 2026-11-17 17:16:47 nemo_logging:393] Checkpoint save for step 385 started at 1794935807.0559127.
+[NeMo I 2026-11-17 17:17:28 nemo_logging:393] Checkpoint save for step 440 started at 1794935848.254403.
+[NeMo I 2026-11-17 17:17:29 nemo_logging:393] Checkpoint save for step 440 started at 1794935849.7083325.
+[NeMo I 2026-11-17 17:18:11 nemo_logging:393] Checkpoint save for step 495 started at 1794935891.701501.
+[NeMo I 2026-11-17 17:18:13 nemo_logging:393] Checkpoint save for step 495 started at 1794935893.102301.
+[NeMo I 2026-11-17 17:18:55 nemo_logging:393] Checkpoint save for step 550 started at 1794935935.4667306.
+[NeMo I 2026-11-17 17:18:56 nemo_logging:393] Checkpoint save for step 550 started at 1794935936.8596678.
+[NeMo I 2026-11-17 17:19:41 nemo_logging:393] Checkpoint save for step 605 started at 1794935981.0491276.
+[NeMo I 2026-11-17 17:19:42 nemo_logging:393] Checkpoint save for step 605 started at 1794935982.5533686.
+[NeMo I 2026-11-17 17:20:24 nemo_logging:393] Checkpoint save for step 660 started at 1794936024.4035704.
+[NeMo I 2026-11-17 17:20:25 nemo_logging:393] Checkpoint save for step 660 started at 1794936025.7407415.
+[NeMo I 2026-11-17 17:21:08 nemo_logging:393] Checkpoint save for step 715 started at 1794936068.7769456.
+[NeMo I 2026-11-17 17:21:10 nemo_logging:393] Checkpoint save for step 715 started at 1794936070.1446083.
+[NeMo I 2026-11-17 17:21:51 nemo_logging:393] Checkpoint save for step 770 started at 1794936111.7052472.
+[NeMo I 2026-11-17 17:22:31 nemo_logging:393] Checkpoint save for step 825 started at 1794936151.0242536.
+[NeMo I 2026-11-17 17:23:10 nemo_logging:393] Checkpoint save for step 880 started at 1794936190.128799.
+[NeMo I 2026-11-17 17:23:49 nemo_logging:393] Checkpoint save for step 935 started at 1794936229.7796657.
+[NeMo I 2026-11-17 17:24:29 nemo_logging:393] Checkpoint save for step 990 started at 1794936269.0296319.
+[NeMo I 2026-11-17 17:25:08 nemo_logging:393] Checkpoint save for step 1045 started at 1794936308.1704912.
+[NeMo I 2026-11-17 17:25:47 nemo_logging:393] Checkpoint save for step 1100 started at 1794936347.9244423.
+[NeMo I 2026-11-17 17:25:49 nemo_logging:393] Checkpoint save for step 1100 started at 1794936349.3942215.

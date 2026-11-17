@@ -1,0 +1,20 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+
+  | Name                | Type                              | Params | Mode 
+----------------------------------------------------------------------------------
+0 | mel_loss_fn         | MelLoss                           | 0      | train
+1 | pitch_loss_fn       | PitchLoss                         | 0      | train
+2 | duration_loss_fn    | DurationLoss                      | 0      | train
+3 | energy_loss_fn      | EnergyLoss                        | 0      | train
+4 | aligner             | AlignmentEncoder                  | 1.0 M  | train
+5 | forward_sum_loss_fn | ForwardSumLoss                    | 0      | train
+6 | bin_loss_fn         | BinLoss                           | 0      | train
+7 | preprocessor        | AudioToMelSpectrogramPreprocessor | 0      | train
+8 | fastpitch           | FastPitchModule                   | 45.8 M | train
+----------------------------------------------------------------------------------
+45.8 M    Trainable params
+0         Non-trainable params
+45.8 M    Total params
+183.035   Total estimated model params size (MB)
+235       Modules in train mode
+0         Modules in eval mode

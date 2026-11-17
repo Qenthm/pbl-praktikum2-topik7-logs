@@ -1,0 +1,76 @@
+[NeMo W 2026-11-16 19:24:05 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'repr' attribute with value False was provided to the `Field()` function, which has no effect in the context it was used. 'repr' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+      warnings.warn(
+    
+[NeMo W 2026-11-16 19:24:05 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/pydantic/_internal/_generate_schema.py:2249: UnsupportedFieldAttributeWarning: The 'frozen' attribute with value True was provided to the `Field()` function, which has no effect in the context it was used. 'frozen' is field-specific metadata, and can only be attached to a model field using `Annotated` metadata or by assignment. This may have happened because an `Annotated` type alias using the `type` statement was used, or if the `Field()` function was attached to a single member of a union type.
+      warnings.warn(
+    
+[NeMo W 2026-11-16 19:24:41 nemo_logging:405] apply_to_oov_word=None, This means that some of words will remain unchanged if they are not handled by any of the rules in self.parse_one_word(). This may be intended if phonemes and chars are both valid inputs, otherwise, you may see unexpected deletions in your input.
+[NeMo W 2026-11-16 19:25:17 nemo_logging:405] apply_to_oov_word=None, This means that some of words will remain unchanged if they are not handled by any of the rules in self.parse_one_word(). This may be intended if phonemes and chars are both valid inputs, otherwise, you may see unexpected deletions in your input.
+[NeMo W 2026-11-16 19:25:17 nemo_logging:405] If you intend to do training or fine-tuning, please call the ModelPT.setup_training_data() method and provide a valid configuration file to setup the train data loader.
+    Train config : 
+    dataset:
+      _target_: nemo.collections.tts.torch.data.TTSDataset
+      manifest_filepath: /ws/LJSpeech/nvidia_ljspeech_train_clean_ngc.json
+      sample_rate: 22050
+      sup_data_path: /raid/LJSpeech/supplementary
+      sup_data_types:
+      - align_prior_matrix
+      - pitch
+      n_fft: 1024
+      win_length: 1024
+      hop_length: 256
+      window: hann
+      n_mels: 80
+      lowfreq: 0
+      highfreq: 8000
+      max_duration: null
+      min_duration: 0.1
+      ignore_file: null
+      trim: false
+      pitch_fmin: 65.40639132514966
+      pitch_fmax: 2093.004522404789
+      pitch_norm: true
+      pitch_mean: 212.35873413085938
+      pitch_std: 68.52806091308594
+      use_beta_binomial_interpolator: true
+    dataloader_params:
+      drop_last: false
+      shuffle: true
+      batch_size: 24
+      num_workers: 0
+    
+[NeMo W 2026-11-16 19:25:17 nemo_logging:405] If you intend to do validation, please call the ModelPT.setup_validation_data() or ModelPT.setup_multiple_validation_data() method and provide a valid configuration file to setup the validation data loader(s). 
+    Validation config : 
+    dataset:
+      _target_: nemo.collections.tts.torch.data.TTSDataset
+      manifest_filepath: /ws/LJSpeech/nvidia_ljspeech_val_clean_ngc.json
+      sample_rate: 22050
+      sup_data_path: /raid/LJSpeech/supplementary
+      sup_data_types:
+      - align_prior_matrix
+      - pitch
+      n_fft: 1024
+      win_length: 1024
+      hop_length: 256
+      window: hann
+      n_mels: 80
+      lowfreq: 0
+      highfreq: 8000
+      max_duration: null
+      min_duration: null
+      ignore_file: null
+      trim: false
+      pitch_fmin: 65.40639132514966
+      pitch_fmax: 2093.004522404789
+      pitch_norm: true
+      pitch_mean: 212.35873413085938
+      pitch_std: 68.52806091308594
+      use_beta_binomial_interpolator: true
+    dataloader_params:
+      drop_last: false
+      shuffle: false
+      batch_size: 24
+      num_workers: 0
+    
+[NeMo W 2026-11-16 19:25:40 nemo_logging:405] /tmp/nemo311/lib/python3.11/site-packages/lightning/pytorch/loops/fit_loop.py:298: The number of training batches (10) is smaller than the logging interval Trainer(log_every_n_steps=100). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+    

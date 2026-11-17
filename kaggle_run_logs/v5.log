@@ -1,0 +1,211 @@
+[{"stream_name":"stderr","time":8.840868573,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.840912081,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.840918697,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.840922961,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.458878744,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":9.458906394,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":9.458911183,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":9.458914845,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":32.824137078,"data":"  Installing build dependencies ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":33.228426095,"data":"  Getting requirements to build wheel ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":33.431645547,"data":"  Preparing metadata (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":33.938325496,"data":"  Building wheel for docopt (pyproject.toml) ... \u001b[?25l\u001b[?25hdone\r\n"}
+,{"stream_name":"stdout","time":35.609546076,"data":"Note: you may need to restart the kernel to use updated packages.\n"}
+,{"stream_name":"stdout","time":93.909426341,"data":"NeMo env installed in 83 s (9 source builds: antlr4-python3-runtime cdifflib docopt intervaltree jieba kaldi-python-io sox texterrors wget)\n"}
+,{"stream_name":"stdout","time":121.376246614,"data":"{'nemo_toolkit': '2.5.0', 'torch': '2.5.1', 'numpy': '1.26.4', 'lightning': '2.4.0', 'librosa': '0.11.0'} Tesla T4\n"}
+,{"stream_name":"stdout","time":121.376285099,"data":" \n"}
+,{"stream_name":"stdout","time":121.376289782,"data":"numpy                  (orchestrator) 2.1.3\n"}
+,{"stream_name":"stdout","time":121.376292808,"data":"pandas                 (orchestrator) 2.3.3\n"}
+,{"stream_name":"stdout","time":121.376295869,"data":"librosa                (orchestrator) 0.11.0\n"}
+,{"stream_name":"stdout","time":121.376298728,"data":"num2words              (orchestrator) 0.5.14\n"}
+,{"stream_name":"stdout","time":121.406623403,"data":"{'KELOMPOK': 'G', 'TOPIK': '7', 'DATA_ROOT': None, 'OUT': '/kaggle/working/outputs', 'WORK': '/kaggle/working/work', 'SEED': 42, 'SAMPLE_RATE': 22050, 'N_MEL_CHANNELS': 80, 'N_WINDOW_SIZE': 1024, 'N_WINDOW_STRIDE': 256, 'N_FFT': 1024, 'MCD_MEL': 'ln', 'EXPECT_RESTORED_JV': True, 'REQUIRE_ID': True, 'MAX_EPOCHS': 100, 'CHECK_VAL_EVERY_N_EPOCH': 5, 'BATCH_SIZE': 16, 'LEARNING_RATE': 0.0002, 'NUM_WORKERS_TRAIN': 4, 'NUM_WORKERS_VAL': 2, 'KEEP_CKPT': False, 'ID_SPEAKER_ID': '2306152216', 'ID_PITCH_STATS': 'own', 'N_JOBS': 4}\n"}
+,{"stream_name":"stdout","time":121.440209997,"data":"Writing lib/topik7_lib.py\n"}
+,{"stream_name":"stdout","time":121.460596335,"data":"Writing lib/topik7_analysis.py\n"}
+,{"stream_name":"stdout","time":121.477403358,"data":"Writing lib/fastpitch_finetune_seeded.py\n"}
+,{"stream_name":"stdout","time":121.493613871,"data":"Writing lib/nemo_tasks.py\n"}
+,{"stream_name":"stdout","time":126.248371578,"data":"DATA_ROOT = /kaggle/input/datasets/<kaggle-user>/pbl-topik7-data \n"}
+,{"stream_name":"stdout","time":126.248416646,"data":"OUT       = /kaggle/working/outputs \n"}
+,{"stream_name":"stdout","time":126.248425819,"data":"WORK      = /kaggle/working/work\n"}
+,{"stream_name":"stdout","time":128.249227166,"data":"restoring previous outputs from /kaggle/input/pbl-praktikum2-topik7/outputs\n"}
+,{"stream_name":"stdout","time":143.712026885,"data":"[guard] Javanese rows + models restored: PRE/P1-P4 will be skipped\n"}
+,{"stream_name":"stdout","time":143.712050915,"data":"[guard] 205 Indonesian wavs present\n"}
+,{"stream_name":"stdout","time":155.749982082,"data":"GPU: Tesla T4 | torch 2.11.0+cu130\n"}
+,{"stream_name":"stdout","time":188.454127358,"data":"verify_manifest (Jawa):\n"}
+,{"stream_name":"stdout","time":188.454181613,"data":"  train_f.json                      157 baris   13.22 menit\n"}
+,{"stream_name":"stdout","time":188.454188722,"data":"  val_f.json                         10 baris    0.81 menit\n"}
+,{"stream_name":"stdout","time":188.45419402,"data":"  test_f.json                        20 baris    1.53 menit\n"}
+,{"stream_name":"stdout","time":188.454198651,"data":"  train_m.json                      157 baris   11.02 menit\n"}
+,{"stream_name":"stdout","time":188.454202929,"data":"  val_m.json                         10 baris    0.60 menit\n"}
+,{"stream_name":"stdout","time":188.454207247,"data":"  test_m.json                        20 baris    1.57 menit\n"}
+,{"stream_name":"stdout","time":203.366098564,"data":"verify_manifest (Indonesia):\n"}
+,{"stream_name":"stdout","time":203.366145128,"data":"  train_id.json                     164 baris   13.75 menit\n"}
+,{"stream_name":"stdout","time":203.36615149,"data":"  val_id.json                        20 baris    1.86 menit\n"}
+,{"stream_name":"stdout","time":203.366156843,"data":"  test_id.json                       21 baris    1.55 menit\n"}
+,{"stream_name":"stdout","time":203.366162073,"data":"{'f': {'utt': 157, 'minutes': 13.219899999999999}, 'm': {'utt': 157, 'minutes': 11.02085}, 'id': {'utt': 164, 'minutes': 13.754}}\n"}
+,{"stream_name":"stdout","time":273.213095992,"data":"  id: 70 s\n"}
+,{"stream_name":"stdout","time":273.347379281,"data":"  f: notebook - local = +0.000 Hz (mean), +0.000 Hz (std)\n"}
+,{"stream_name":"stdout","time":273.347403772,"data":"  m: notebook - local = +0.000 Hz (mean), +0.000 Hz (std)\n"}
+,{"stream_name":"stdout","time":364.308719455,"data":"torch/NeMo/NeMo_2.5.0/tts_en_fastpitch_align/b7d086a07b5126c12d5077d9a641a38c/tts_en_fastpitch_align.nemo\n"}
+,{"stream_name":"stdout","time":364.308762168,"data":"[NeMo I 2026-11-17 17:04:29 nemo_logging:393] Instantiating model from pre-trained checkpoint\n"}
+,{"stream_name":"stdout","time":364.308767908,"data":"[NeMo I 2026-11-17 17:04:55 nemo_logging:393] PADDING: 1\n"}
+,{"stream_name":"stdout","time":364.30877269,"data":"[NeMo I 2026-11-17 17:04:56 nemo_logging:393] Model FastPitchModel was successfully restored from /root/.cache/torch/NeMo/NeMo_2.5.0/tts_en_fastpitch_align/b7d086a07b5126c12d5077d9a641a38c/tts_en_fastpitch_align.nemo.\n"}
+,{"stream_name":"stdout","time":364.30878011,"data":"[NeMo I 2026-11-17 17:04:57 nemo_logging:393] Downloading from: https://api.ngc.nvidia.com/v2/models/nvidia/nemo/tts_hifigan/versions/1.0.0rc1/files/tts_hifigan.nemo to /root/.cache/torch/NeMo/NeMo_2.5.0/tts_hifigan/e6da322f0f7e7dcf3f1900a9229a7e69/tts_hifigan.nemo\n"}
+,{"stream_name":"stdout","time":364.308810129,"data":"[NeMo I 2026-11-17 17:05:14 nemo_logging:393] Instantiating model from pre-trained checkpoint\n"}
+,{"stream_name":"stdout","time":364.308816309,"data":"[NeMo I 2026-11-17 17:05:18 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":364.308820915,"data":"[NeMo I 2026-11-17 17:05:18 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":364.308825297,"data":"[NeMo I 2026-11-17 17:05:20 nemo_logging:393] Model HifiGanModel was successfully restored from /root/.cache/torch/NeMo/NeMo_2.5.0/tts_hifigan/e6da322f0f7e7dcf3f1900a9229a7e69/tts_hifigan.nemo.\n"}
+,{"stream_name":"stdout","time":364.30883909,"data":"[NeMo I 2026-11-17 17:05:46 nemo_logging:393] PADDING: 1\n"}
+,{"stream_name":"stdout","time":364.308842709,"data":"[NeMo I 2026-11-17 17:05:47 nemo_logging:393] Model FastPitchModel was successfully restored from /kaggle/working/work/nemo_pretrained/tts_en_fastpitch.nemo.\n"}
+,{"stream_name":"stdout","time":364.308846275,"data":"fetch OK {'pitch_mean': 212.35873413085938, 'pitch_std': 68.52806091308594, 'pitch_fmin': 65.40639132514966, 'pitch_fmax': 2093.004522404789}\n"}
+,{"stream_name":"stdout","time":364.30885,"data":"pitch stats used to PRETRAIN tts_en_fastpitch: {'pitch_mean': 212.35873413085938, 'pitch_std': 68.52806091308594, 'pitch_fmin': 65.40639132514966, 'pitch_fmax': 2093.004522404789}\n"}
+,{"stream_name":"stdout","time":368.867756308,"data":"sanity: MCD(ground truth, ground truth) = {'mcd_db': 0.0, 'mcd_ln': 0.0, 'mcd_lin': 0.0}\n"}
+,{"stream_name":"stdout","time":368.949052073,"data":"6 baris hasil.csv dimuat\n"}
+,{"stream_name":"stdout","time":369.053681443,"data":"smoke test passed earlier: {\n"}
+,{"stream_name":"stdout","time":369.053707707,"data":"  \"synthesis\": {\n"}
+,{"stream_name":"stdout","time":369.05371238,"data":"    \"utt\": \"jvf_08736_01775479795\",\n"}
+,{"stream_name":"stdout","time":369.053716256,"data":"    \"sec\": 5.18\n"}
+,{"stream_name":"stdout","time":369.053719648,"data":"  },\n"}
+,{"stream_name":"stdout","time":369.053723082,"data":"  \"finetune_2_steps_s\": 245.0,\n"}
+,{"stream_name":"stdout","time":369.053726798,"data":"  \"nemo_env\": {\n"}
+,{"stream_name":"stdout","time":369.053730361,"data":"    \"nemo_toolkit\": \"2.5.0\",\n"}
+,{"stream_name":"stdout","time":369.053733921,"data":"    \"torch\": \"2.5.1\",\n"}
+,{"stream_name":"stdout","time":369.053741865,"data":"    \"numpy\": \"1.26.4\",\n"}
+,{"stream_name":"stdout","time":369.053745466,"data":"    \"lightning\": \"2.4.0\",\n"}
+,{"stream_name":"stdout","time":369.053748981,"data":"    \"librosa\": \"0.11.0\",\n"}
+,{"stream_name":"stdout","time":369.053752405,"data":"    \"python\": \"3.11.18\",\n"}
+,{"stream_name":"stdout","time":369.053755944,"data":"    \"gpu\": \"Tesla T4\"\n"}
+,{"stream_name":"stdout","time":369.053759469,"data":"  },\n"}
+,{"stream_name":"stdout","time":369.053762838,"data":"  \"orchestrator\": {\n"}
+,{"stream_name":"stdout","time":369.053766312,"data":"    \"numpy\": \"2.1.3\",\n"}
+,{"stream_name":"stdout","time":369.053786501,"data":"    \"torch\": \"2.11.0+cu130\"\n"}
+,{"stream_name":"stdout","time":369.053790201,"data":"  },\n"}
+,{"stream_name":"stdout","time":369.053793801,"data":"  \"gpu\": \"Tesla T4\"\n"}
+,{"stream_name":"stdout","time":369.053797515,"data":"}\n"}
+,{"stream_name":"stdout","time":369.069736486,"data":"skip PRE on test_f (row exists)\n"}
+,{"stream_name":"stdout","time":369.069758729,"data":"skip PRE on test_m (row exists)\n"}
+,{"stream_name":"stdout","time":369.086406862,"data":"skip P1-F-own (.nemo + hasil row exist)\n"}
+,{"stream_name":"stdout","time":369.10280326,"data":"skip P2-F-ljs (.nemo + hasil row exist)\n"}
+,{"stream_name":"stdout","time":369.121514865,"data":"skip P3-M-own (.nemo + hasil row exist)\n"}
+,{"stream_name":"stdout","time":369.138680478,"data":"skip P4-M-ljs (.nemo + hasil row exist)\n"}
+,{"stream_name":"stdout","time":411.454736475,"data":"[NeMo I 2026-11-17 17:06:29 nemo_logging:393] PADDING: 1\n"}
+,{"stream_name":"stdout","time":411.454767048,"data":"[NeMo I 2026-11-17 17:06:30 nemo_logging:393] Model FastPitchModel was successfully restored from /kaggle/working/work/nemo_pretrained/tts_en_fastpitch.nemo.\n"}
+,{"stream_name":"stdout","time":411.454800533,"data":"[NeMo I 2026-11-17 17:06:30 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":411.454805687,"data":"[NeMo I 2026-11-17 17:06:30 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":411.454809851,"data":"[NeMo I 2026-11-17 17:06:32 nemo_logging:393] Model HifiGanModel was successfully restored from /kaggle/working/work/nemo_pretrained/tts_en_hifigan.nemo.\n"}
+,{"stream_name":"stdout","time":411.454816453,"data":"synth OK: 21 utterances\n"}
+,{"stream_name":"stdout","time":448.768418058,"data":"  recorded PRE        test_id  MCD=47.55\n"}
+,{"stream_name":"stdout","time":448.76845778,"data":"./file/fastpitch_finetune_seeded.py --config-name=fastpitch_align.yaml train_dataset=/kaggle/working/outputs/manifests/train_id.json validation_datasets=/kaggle/working/outputs/manifests/val_id.json ++trainer.max_epochs=100 trainer.check_val_every_n_epoch=5 model.train_ds.dataloader_params.batch_size=16 model.validation_ds.dataloader_params.batch_size=16 model.train_ds.dataloader_params.num_workers=4 model.validation_ds.dataloader_params.num_workers=2 sup_data_path=/kaggle/working/work/sup_data/ID-FP phoneme_dict_path=./file/cmudict-0.7b_nv22.10 heteronyms_path=./file/heteronyms-052722 exp_manager.exp_dir=/kaggle/working/outputs/logs/ID-FP +init_from_nemo_model=/kaggle/working/work/nemo_pretrained/tts_en_fastpitch.nemo model.n_speakers=1 model.pitch_mean=162.1611 model.pitch_std=28.2527 model.pitch_fmin=30 model.pitch_fmax=512 model.optim.lr=0.0002 ~model.optim.sched model.optim.name=adam trainer.devices=1 trainer.strategy=auto +model.text_tokenizer.add_blank_at=true ++exp_manager.checkpoint_callback_params.save_best_model=true\n"}
+,{"stream_name":"stdout","time":766.557646584,"data":"tw=4.690]Epoch 4, global step 55: 'val_loss' reached 1.43264 (best 1.43264), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.4326-epoch=4.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":772.578935605,"data":"[ETA] epoch 5/100 |   4.2 s/epoch | elapsed   4.3 min | remaining ~  6.6 min | est. total ~ 10.9 min\n"}
+,{"stream_name":"stdout","time":809.635061707,"data":"w=4.800]Epoch 9, global step 110: 'val_loss' reached 1.26608 (best 1.26608), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2661-epoch=9.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":814.346004895,"data":"[ETA] epoch 10/100 |   6.9 s/epoch | elapsed   5.0 min | remaining ~ 10.4 min | est. total ~ 15.4 min\n"}
+,{"stream_name":"stdout","time":852.465061211,"data":"4.240]Epoch 14, global step 165: 'val_loss' reached 1.23335 (best 1.23335), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2333-epoch=14.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":894.575870925,"data":"4.070]Epoch 19, global step 220: 'val_loss' reached 1.24541 (best 1.23335), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2454-epoch=19.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":899.467605916,"data":"[ETA] epoch 20/100 |   8.5 s/epoch | elapsed   6.4 min | remaining ~ 11.4 min | est. total ~ 17.8 min\n"}
+,{"stream_name":"stdout","time":937.766418625,"data":"4.590]Epoch 24, global step 275: 'val_loss' reached 1.26069 (best 1.23335), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2607-epoch=24.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":981.882782308,"data":"[ETA] epoch 30/100 |   8.5 s/epoch | elapsed   7.8 min | remaining ~  9.9 min | est. total ~ 17.7 min\n"}
+,{"stream_name":"stdout","time":1019.724685632,"data":"4.000]Epoch 34, global step 385: 'val_loss' reached 1.24382 (best 1.23335), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2438-epoch=34.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1062.292466621,"data":"4.150]Epoch 39, global step 440: 'val_loss' reached 1.21545 (best 1.21545), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2155-epoch=39.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1066.985645455,"data":"[ETA] epoch 40/100 |   8.2 s/epoch | elapsed   9.2 min | remaining ~  8.2 min | est. total ~ 17.4 min\n"}
+,{"stream_name":"stdout","time":1105.733587539,"data":"4.000]Epoch 44, global step 495: 'val_loss' reached 1.21782 (best 1.21545), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2178-epoch=44.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1149.498069593,"data":"4.100]Epoch 49, global step 550: 'val_loss' reached 1.20257 (best 1.20257), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2026-epoch=49.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1157.257112651,"data":"[ETA] epoch 50/100 |   8.7 s/epoch | elapsed  10.7 min | remaining ~  7.3 min | est. total ~ 18.0 min\n"}
+,{"stream_name":"stdout","time":1195.080762549,"data":"4.220]Epoch 54, global step 605: 'val_loss' reached 1.21696 (best 1.20257), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2170-epoch=54.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1238.441077269,"data":"4.280]Epoch 59, global step 660: 'val_loss' reached 1.20881 (best 1.20257), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2088-epoch=59.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1244.764155495,"data":"[ETA] epoch 60/100 |   8.9 s/epoch | elapsed  12.2 min | remaining ~  5.9 min | est. total ~ 18.1 min\n"}
+,{"stream_name":"stdout","time":1282.816255926,"data":"4.380]Epoch 64, global step 715: 'val_loss' reached 1.20518 (best 1.20257), saving model to '/kaggle/working/outputs/logs/ID-FP/FastPitch/2026-11-17_17-07-24/checkpoints/FastPitch--val_loss=1.2052-epoch=64.ckpt' as top 3\n"}
+,{"stream_name":"stdout","time":1327.162486391,"data":"[ETA] epoch 70/100 |   8.8 s/epoch | elapsed  13.5 min | remaining ~  4.4 min | est. total ~ 17.9 min\n"}
+,{"stream_name":"stdout","time":1405.615899413,"data":"[ETA] epoch 80/100 |   7.8 s/epoch | elapsed  14.9 min | remaining ~  2.6 min | est. total ~ 17.5 min\n"}
+,{"stream_name":"stdout","time":1484.415989101,"data":"[ETA] epoch 90/100 |   7.9 s/epoch | elapsed  16.2 min | remaining ~  1.3 min | est. total ~ 17.5 min\n"}
+,{"stream_name":"stdout","time":1563.423949614,"data":"[ETA] epoch 100/100 |   7.9 s/epoch | elapsed  17.5 min | remaining ~  0.0 min | est. total ~ 17.5 min\n"}
+,{"stream_name":"stdout","time":1572.153336943,"data":"ID-FP: trained in 18.7 min, best val_loss 1.2026 @ epoch 49\n"}
+,{"stream_name":"stdout","time":1619.394628583,"data":"[NeMo I 2026-11-17 17:26:36 nemo_logging:393] PADDING: 1\n"}
+,{"stream_name":"stdout","time":1619.394659044,"data":"[NeMo I 2026-11-17 17:26:37 nemo_logging:393] Model FastPitchModel was successfully restored from /kaggle/working/outputs/models/ID-FP.nemo.\n"}
+,{"stream_name":"stdout","time":1619.394665655,"data":"[NeMo I 2026-11-17 17:26:38 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":1619.394670652,"data":"[NeMo I 2026-11-17 17:26:38 nemo_logging:393] PADDING: 0\n"}
+,{"stream_name":"stdout","time":1619.394674963,"data":"[NeMo I 2026-11-17 17:26:40 nemo_logging:393] Model HifiGanModel was successfully restored from /kaggle/working/work/nemo_pretrained/tts_en_hifigan.nemo.\n"}
+,{"stream_name":"stdout","time":1619.394679742,"data":"synth OK: 21 utterances\n"}
+,{"stream_name":"stdout","time":1647.308982814,"data":"  recorded ID-FP      test_id  MCD=28.37\n"}
+,{"stream_name":"stdout","time":1647.439274737,"data":"\n"}
+,{"stream_name":"stdout","time":1647.439301128,"data":"Δ = MCD(ljs) - MCD(own) per kalimat test (berpasangan); 10k bootstrap:\n"}
+,{"stream_name":"stdout","time":1647.439305078,"data":"  ΔF       = -0.249 dB  95% CI [-0.595, +0.095]  p=0.1650 (Wilcoxon signed-rank (paired))  -\u003e NOT distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.439328238,"data":"  ΔM       = +1.409 dB  95% CI [+0.322, +2.689]  p=0.0056 (Wilcoxon signed-rank (paired))  -\u003e distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.439332872,"data":"  ΔM - ΔF  = +1.657 dB  95% CI [+0.511, +2.955]  p=0.0015 (Mann-Whitney U (unpaired))  -\u003e distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.486730067,"data":"\n"}
+,{"stream_name":"stdout","time":1647.486752224,"data":"sensitivity: same deltas with power_to_db and linear mels:\n"}
+,{"stream_name":"stdout","time":1647.486758382,"data":"  ΔF       = +0.514 dB  95% CI [-5.254, +7.648]  p=0.5459 (Wilcoxon signed-rank (paired))  -\u003e NOT distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.486763855,"data":"  ΔM       = +10.925 dB  95% CI [+2.814, +19.440]  p=0.0296 (Wilcoxon signed-rank (paired))  -\u003e distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.486768481,"data":"  ΔM - ΔF  = +10.411 dB  95% CI [-0.446, +20.697]  p=0.0499 (Mann-Whitney U (unpaired))  -\u003e NOT distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.48677305,"data":"  ΔF       = +0.012 dB  95% CI [-3.338, +3.269]  p=0.8983 (Wilcoxon signed-rank (paired))  -\u003e NOT distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.486777294,"data":"  ΔM       = +2.300 dB  95% CI [+0.841, +3.757]  p=0.0094 (Wilcoxon signed-rank (paired))  -\u003e distinguishable from zero\n"}
+,{"stream_name":"stdout","time":1647.486826686,"data":"  ΔM - ΔF  = +2.289 dB  95% CI [-1.305, +5.955]  p=0.3793 (Mann-Whitney U (unpaired))  -\u003e NOT distinguishable from zero\n"}
+,{"stream_name":"stderr","time":1791.38382824,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":1791.383902976,"data":"I0000 00:00:1794936577.242272      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":1791.586094129,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":1791.586130045,"data":"I0000 00:00:1794936577.242272      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stderr","time":1791.586136631,"data":"\n"}
+,{"stream_name":"stderr","time":1791.586141202,"data":"WARNING: All log messages before absl::InitializeLog() is called are written to STDERR\n"}
+,{"stream_name":"stderr","time":1791.586145644,"data":"I0000 00:00:1794936577.242272      23 cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.\n"}
+,{"stream_name":"stdout","time":1795.008158911,"data":"ID-FP | test_id | TVRI_BS_071119_0030 | MCD 27.09\n"}
+,{"stream_name":"stdout","time":1795.008197701,"data":"  \"Dengan senjata api jenis HS yang diduga digunakan oleh Brigadir AM\"\n"}
+,{"stream_name":"stdout","time":1795.025396414,"data":"ID-FP | test_id | TVRI_BS_071119_0032 | MCD 32.59\n"}
+,{"stream_name":"stdout","time":1795.0254257,"data":"  \"Tiga dari enam selongsong itu didapatkan dari ombudsman wilayah Sulawesi Tenggara.\"\n"}
+,{"stream_name":"stdout","time":1795.037427861,"data":"ID-FP | test_id | TVRI_BS_071119_0050 | MCD 21.72\n"}
+,{"stream_name":"stdout","time":1795.037459363,"data":"  \"Segera akan dilakukan penahanan dan berkas perkara segera dilimpahkan ke jaksa penuntut umum\"\n"}
+,{"stream_name":"stdout","time":1795.053017999,"data":"P1-F-own | test_f | jvf_08736_01775479795 | MCD 25.07\n"}
+,{"stream_name":"stdout","time":1795.053037525,"data":"  \"matt damon metu saka kantin nalika wis jam setengah papat punjul sepuluh\"\n"}
+,{"stream_name":"stdout","time":1795.067781382,"data":"P1-F-own | test_f | jvf_08736_00100716243 | MCD 19.32\n"}
+,{"stream_name":"stdout","time":1795.067814408,"data":"  \"nino fernandez iki jik onok hubungan seduluran ambèk kraton solo\"\n"}
+,{"stream_name":"stdout","time":1795.079271198,"data":"P1-F-own | test_f | jvf_08736_01726151185 | MCD 22.28\n"}
+,{"stream_name":"stdout","time":1795.079288575,"data":"  \"wali sanga kuwi dadi panutan wong islam\"\n"}
+,{"stream_name":"stdout","time":1795.087246568,"data":"P2-F-ljs | test_f | jvf_08736_01775479795 | MCD 24.54\n"}
+,{"stream_name":"stdout","time":1795.087262009,"data":"  \"matt damon metu saka kantin nalika wis jam setengah papat punjul sepuluh\"\n"}
+,{"stream_name":"stdout","time":1795.098429649,"data":"P2-F-ljs | test_f | jvf_08736_00100716243 | MCD 18.53\n"}
+,{"stream_name":"stdout","time":1795.098444053,"data":"  \"nino fernandez iki jik onok hubungan seduluran ambèk kraton solo\"\n"}
+,{"stream_name":"stdout","time":1795.113117709,"data":"P2-F-ljs | test_f | jvf_08736_01726151185 | MCD 23.49\n"}
+,{"stream_name":"stdout","time":1795.11313379,"data":"  \"wali sanga kuwi dadi panutan wong islam\"\n"}
+,{"stream_name":"stdout","time":1795.121713933,"data":"P3-M-own | test_m | jvm_05522_01386329916 | MCD 24.71\n"}
+,{"stream_name":"stdout","time":1795.121728078,"data":"  \"bono mlebet mlebet teng_prep daleme gusti kanjeng mboten sanjang rumiyin\"\n"}
+,{"stream_name":"stdout","time":1795.134320375,"data":"P3-M-own | test_m | jvm_05522_01785135152 | MCD 22.62\n"}
+,{"stream_name":"stdout","time":1795.134338003,"data":"  \"bella sofie ora wedi karo larangane wong tuwane\"\n"}
+,{"stream_name":"stdout","time":1795.146651315,"data":"P3-M-own | test_m | jvm_05522_01316380464 | MCD 19.27\n"}
+,{"stream_name":"stdout","time":1795.146667972,"data":"  \"antri bensin ngantos setengah jam dereng dipunlayani\"\n"}
+,{"stream_name":"stdout","time":1795.159054948,"data":"P4-M-ljs | test_m | jvm_05522_01386329916 | MCD 26.41\n"}
+,{"stream_name":"stdout","time":1795.159069146,"data":"  \"bono mlebet mlebet teng_prep daleme gusti kanjeng mboten sanjang rumiyin\"\n"}
+,{"stream_name":"stdout","time":1795.170458391,"data":"P4-M-ljs | test_m | jvm_05522_01785135152 | MCD 25.27\n"}
+,{"stream_name":"stdout","time":1795.170474612,"data":"  \"bella sofie ora wedi karo larangane wong tuwane\"\n"}
+,{"stream_name":"stdout","time":1795.17742726,"data":"P4-M-ljs | test_m | jvm_05522_01316380464 | MCD 20.84\n"}
+,{"stream_name":"stdout","time":1795.177441684,"data":"  \"antri bensin ngantos setengah jam dereng dipunlayani\"\n"}
+,{"stream_name":"stdout","time":1795.184695592,"data":"PRE | test_f | jvf_08736_01775479795 | MCD 55.85\n"}
+,{"stream_name":"stdout","time":1795.184710933,"data":"  \"matt damon metu saka kantin nalika wis jam setengah papat punjul sepuluh\"\n"}
+,{"stream_name":"stdout","time":1795.196953091,"data":"PRE | test_f | jvf_08736_00100716243 | MCD 49.18\n"}
+,{"stream_name":"stdout","time":1795.196968615,"data":"  \"nino fernandez iki jik onok hubungan seduluran ambèk kraton solo\"\n"}
+,{"stream_name":"stdout","time":1795.2128262,"data":"PRE | test_f | jvf_08736_01726151185 | MCD 55.11\n"}
+,{"stream_name":"stdout","time":1795.212841372,"data":"  \"wali sanga kuwi dadi panutan wong islam\"\n"}
+,{"stream_name":"stdout","time":1795.220601055,"data":"PRE | test_id | TVRI_BS_071119_0030 | MCD 46.87\n"}
+,{"stream_name":"stdout","time":1795.220628191,"data":"  \"Dengan senjata api jenis HS yang diduga digunakan oleh Brigadir AM\"\n"}
+,{"stream_name":"stdout","time":1795.230861285,"data":"PRE | test_id | TVRI_BS_071119_0032 | MCD 53.29\n"}
+,{"stream_name":"stdout","time":1795.230877226,"data":"  \"Tiga dari enam selongsong itu didapatkan dari ombudsman wilayah Sulawesi Tenggara.\"\n"}
+,{"stream_name":"stdout","time":1795.241491908,"data":"PRE | test_id | TVRI_BS_071119_0050 | MCD 49.17\n"}
+,{"stream_name":"stdout","time":1795.241505989,"data":"  \"Segera akan dilakukan penahanan dan berkas perkara segera dilimpahkan ke jaksa penuntut umum\"\n"}
+,{"stream_name":"stdout","time":1795.253810024,"data":"PRE | test_m | jvm_05522_01386329916 | MCD 43.05\n"}
+,{"stream_name":"stdout","time":1795.253827179,"data":"  \"bono mlebet mlebet teng_prep daleme gusti kanjeng mboten sanjang rumiyin\"\n"}
+,{"stream_name":"stdout","time":1795.262567718,"data":"PRE | test_m | jvm_05522_01785135152 | MCD 46.40\n"}
+,{"stream_name":"stdout","time":1795.262583497,"data":"  \"bella sofie ora wedi karo larangane wong tuwane\"\n"}
+,{"stream_name":"stdout","time":1795.269207958,"data":"PRE | test_m | jvm_05522_01316380464 | MCD 46.54\n"}
+,{"stream_name":"stdout","time":1795.26922388,"data":"  \"antri bensin ngantos setengah jam dereng dipunlayani\"\n"}
+,{"stream_name":"stdout","time":1795.782742332,"data":"hasil.csv check: OK\n"}
+,{"stream_name":"stdout","time":1797.59389551,"data":"wrote /kaggle/working/outputs_light.zip (36.8 MB)\n"}
+,{"stream_name":"stderr","time":1803.171992576,"data":"/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1803.172034971,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1803.356873806,"data":"/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1803.356899385,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1804.16499143,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1804.507077723,"data":"[NbConvertApp] Writing 14128101 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1806.98243018,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1808.353894557,"data":"[NbConvertApp] Support files will be in __results___files/\n"}
+,{"stream_name":"stderr","time":1808.35394494,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":1808.354380609,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":1808.354651643,"data":"[NbConvertApp] Making directory __results___files\n"}
+,{"stream_name":"stderr","time":1808.354962911,"data":"[NbConvertApp] Writing 14033454 bytes to __results__.html\n"}
+]
