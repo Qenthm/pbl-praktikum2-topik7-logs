@@ -31,7 +31,7 @@ Pitch stats were computed with `librosa.pyin(fmin=30, fmax=512, sr=22050)` on th
   validation every 5 epochs), i.e. the selected epoch above, not the last epoch.
 - `FastPitch/<timestamp>/` - the (latest and only) NeMo experiment folder: `events.out.tfevents.*` (TensorBoard), `hparams.yaml`,
   `cmd-args.log`, `lightning_logs.txt`, `nemo_log_globalrank-0_localrank-0.txt`, `nemo_error_log.txt`.
-- `status.json` - epoch / elapsed time / peak VRAM written by the training wrapper.
+- `status.json` - epoch / elapsed time / peak VRAM written by the training wrapper. Its `epoch` field is the wrapper's counter after the last epoch (101 for P1-P4, 100 for ID-FP); `max_epochs` was 100 for every run.
 - `train_stdout.log` - full stdout of the training process.
 - `kaggle_run_logs/v4.log`, `v5.log` - Kaggle execution logs of the two notebook runs. v4 trained P1-F-own..P4-M-ljs; v5 restored those four unchanged
   and added ID-FP. The P1-F-own..P4-M-ljs `.nemo` files and log folders of v5 are byte-identical to v4 (sha256 checked); the copies here come from v5.
